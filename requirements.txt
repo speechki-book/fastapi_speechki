@@ -1,0 +1,2 @@
+fastapi
+git+https://github.com/speechki-book/clickhouse_utils.git@0.1
