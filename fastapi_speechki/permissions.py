@@ -10,7 +10,6 @@ class AbstractPermission(object):
 
     def __init__(self, request: Request):
         self.request = request
-        self.session = request.app.general_session
 
     async def has_permissions(self) -> bool:
         raise NotImplementedError
