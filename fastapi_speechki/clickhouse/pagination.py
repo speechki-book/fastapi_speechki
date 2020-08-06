@@ -66,6 +66,7 @@ class OffsetLimitClickHousePagination(AbstractLimitOffsetPagination):
             - filter_params: Optional[dict] = None,
             - pagination: Optional[dict] = None,
             - fields: Optional[List[str]] = None,
+            - ordering Optional[List[str]] = None,
         :return:
         """
         self.list = await self.client.get_list(
